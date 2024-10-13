@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Management</title>
+    <link rel="stylesheet" href="/static/Job.css">
+</head>
+<body>
+    <h1>Job Management</h1>
+
+    <form id="add-job-form">
+        <input type="text" id="title" placeholder="Job Title" required>
+        <input type="text" id="company" placeholder="Company Name" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="Experience" placeholder="Experience" required>
+        <input type="text" id="Skills" placeholder="Skills" required>
+        <input type="text" id="type" placeholder="Job Type" required>
+        <input type="text" id="salary" placeholder="Salary" required>
+        <textarea id="description" placeholder="Job Description" required></textarea>
+        <input type="text" id="category" placeholder="Category">
+        <button type="submit">Add Job</button>
+    </form>
+
+    <h2>Filter Jobs</h2>
+    <form id="filter-form">
+        <input type="text" id="filter-type" placeholder="Job Type">
+        <input type="text" id="filter-location" placeholder="Location">
+        <input type="text" id="filter-category" placeholder="Category">
+        <button type="submit">Filter</button>
+    </form>
+
+    <h2>Job List</h2>
+    <div id="job-list"></div>
+
+    <h2>Job Recommendations</h2>
+    <input type="text" id="recommendation-title" placeholder="Job Title">
+    <button id="recommend-by-title">Recommend by Title</button>
+
+    <input type="text" id="recommendation-skills" placeholder="Skills">
+    <button id="recommend-by-skills">Recommend by Skills</button>
+
+    <div id="recommendations"></div>
+
+    <script src="/static/Job.js"></script>
+</body>
+</html>
